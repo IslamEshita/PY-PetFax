@@ -1,0 +1,62 @@
+body {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.pet_name {
+    color: blue;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    border-bottom: 2px solid red;
+    text-transform:uppercase;
+}
+
+.pet_container {
+    border: 2px solid black;
+    width: 300px;
+    height:fit-content;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.pet_container img {
+    width: 100%;
+}
+
+form {
+    width: 600px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=textarea] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

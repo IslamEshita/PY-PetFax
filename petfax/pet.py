@@ -10,12 +10,15 @@ print(pets)
 
 @bp.route('/')
 def index():
-    return render_template('index.html', pets=pets)
+    return render_template('pets/index.html', pets=pets)
 
 
 @bp.route('/<int:petId>')
 def showpet(petId):
-    # Get the pet
-    pet = pets[petId]
-    # Render the template
-    return render_template('show.html', pet=pet)
+    for current_pet in pets:
+        print(current_pet)
+        if current_pet["pet_id"] == petId:
+            pet = current_pet
+            return render_template('pets/show.html', pet=pet)
+
+    # Show the error page
