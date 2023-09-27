@@ -13,6 +13,10 @@ h1 {
     text-align: center;
 }
 
+.add_fact {
+    font-size: 2em;
+}
+
 .pet_name {
     color: blue;
     text-align: center;
@@ -39,11 +43,19 @@ h1 {
 
 form {
     width: 600px;
+    border: 2px solid black;
+    padding: 20px;
 }
 
-input[type=text] {
+label {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+input[type=text], textarea {
     width: 100%;
     padding: 12px 20px;
+    background-color: bisque;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -51,12 +63,10 @@ input[type=text] {
     box-sizing: border-box;
   }
 
-  input[type=textarea] {
+input[type=submit] {
+    font-size: 1.2em;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+    padding: 5px;
+    background-color: green;
+    color: white;
+}
